@@ -1,0 +1,1 @@
+g++ -std=c++11  factory.cpp ../simple_plant_caculate简单工厂模式/operation.cpp -I../simple_plant_caculate简单工厂模式 -I./ -o a.out
