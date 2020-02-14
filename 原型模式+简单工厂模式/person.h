@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include "notificationer.h"
 using namespace std;
 /*人物接口*/
 typedef enum{
@@ -9,7 +10,7 @@ typedef enum{
     WOMAN
 }GENDER;
 
-class person
+class person : public Notification
 {
     protected:
         char *name;  //姓名
@@ -29,7 +30,7 @@ class person
             name = dressd = pretendName =nullptr;
         }
         person() = delete;
-        person(const char *name)
+        person(const char *name):Notification()
         {
             setPretendName("没有伪装");
             int nameLen = strlen(name);

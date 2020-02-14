@@ -46,6 +46,10 @@ class sunwukong : public Prototype , public person
             }
             return backPerson;
         }
+        void fuckMonster(const char *message)
+        {
+            cout<<name<<"听到"<<message<<"，"<<"打妖怪"<<endl;
+        }
         private:
             sunwukong(person *sourceType):person("孙悟空"){};
 };
